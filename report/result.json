@@ -1,0 +1,208 @@
+{
+  "loader": {
+    "shownAtStart": true,
+    "hasRing": true,
+    "hasLine": true,
+    "pctAtStart": 55,
+    "pctAtEnd": 100,
+    "goneAfter": true
+  },
+  "stage": {
+    "brand": "HCDESIGN",
+    "docTitle": "HCDESIGN — Commercial interiors · Canada",
+    "noNameOfReference": true,
+    "titleLines": [
+      "Crafted",
+      "Interiors"
+    ],
+    "titleRevealed": true,
+    "titleIsSerif": true,
+    "titleFits": true,
+    "titleWidthShare": 0.65,
+    "slides": 3,
+    "slideNames": [
+      "Atrium Laurier, Montréal",
+      "Kiln Studio, Toronto",
+      "Harbour Office, Vancouver"
+    ],
+    "cardRevealed": true,
+    "cardCentred": true,
+    "cardPortrait": true,
+    "cardOverlapsTitle": true,
+    "bothTitleLinesShowBesideCard": true,
+    "cardAboveTitle": true,
+    "counter": "1 – 3",
+    "scrollLabel": "Scroll",
+    "tagline": "Commercial interiors · Canada",
+    "viewAll": "View all projects",
+    "year": "©2026",
+    "headerItems": {
+      "logo": true,
+      "gallery": true,
+      "menuButton": true,
+      "langSwitch": 2
+    },
+    "singleScreen": true
+  },
+  "slides": {
+    "sequence": "1 2 3 1 3 1 3",
+    "wheelAdvances": true,
+    "loopsForward": true,
+    "loopsBackward": true,
+    "keyboard": true,
+    "threeBackgrounds": true,
+    "backgrounds": [
+      "rgb(61, 64, 58)",
+      "rgb(139, 136, 128)",
+      "rgb(27, 27, 26)"
+    ],
+    "onlyActiveFocusable": true
+  },
+  "cursor": {
+    "follows": true,
+    "growsOverImage": true,
+    "label": "View"
+  },
+  "menu": {
+    "expanded": true,
+    "coversScreen": true,
+    "black": "rgb(0, 0, 0)",
+    "links": [
+      "Home",
+      "Projects",
+      "About",
+      "Contact"
+    ],
+    "linksRisen": true,
+    "linksAreLarge": true,
+    "currentMarked": "#home",
+    "number": "01",
+    "blurb": true,
+    "cursorResets": true,
+    "headerOnTop": true,
+    "numberFollowsHover": true,
+    "arrowOnHover": true,
+    "wheelIgnoredWhileOpen": true,
+    "toneToggle": true,
+    "closesOnEscape": true
+  },
+  "views": {
+    "projects": {
+      "shown": true,
+      "menuClosed": true,
+      "heading": "Projects",
+      "focusOnHeading": true,
+      "items": 6
+    },
+    "about": {
+      "shown": true,
+      "menuClosed": true,
+      "heading": "Warm, modern workplaces with a northern point of view.",
+      "focusOnHeading": true,
+      "items": 4
+    },
+    "contact": {
+      "shown": true,
+      "menuClosed": true,
+      "heading": "Tell us about your space.",
+      "focusOnHeading": true,
+      "items": 0
+    },
+    "backHome": true,
+    "linksResolve": true,
+    "noExternalLinks": true
+  },
+  "french": {
+    "htmlLang": "fr-CA",
+    "docTitle": "HCDESIGN — Intérieurs commerciaux · Canada",
+    "titleLines": [
+      "Intérieurs",
+      "Soignés"
+    ],
+    "titleFits": true,
+    "tagline": "Intérieurs commerciaux · Canada",
+    "viewAll": "Voir tous les projets",
+    "menu": [
+      "Accueil",
+      "Projets",
+      "À propos",
+      "Contact"
+    ],
+    "pressed": true,
+    "ariaTranslated": "Ouvrir ou fermer le menu",
+    "nothingLeftUntranslated": true,
+    "remembered": "fr",
+    "keptAfterReload": true,
+    "switchesBack": true,
+    "keysMatch": true
+  },
+  "canada": {
+    "taglineNamesCanada": true,
+    "projectPlaces": [
+      "Montréal, QC",
+      "Toronto, ON",
+      "Vancouver, BC",
+      "Québec, QC",
+      "Calgary, AB",
+      "Ottawa, ON"
+    ],
+    "allProjectsInCanada": true,
+    "canadianSpelling": true,
+    "noSingapore": true
+  },
+  "widths": [
+    {
+      "width": 768,
+      "lang": "en-CA",
+      "noScroll": true,
+      "titleFits": true,
+      "bothTitleLinesShowBesideCard": true,
+      "cardFits": true,
+      "menuButtonReachable": true,
+      "loaderGone": true,
+      "menuFits": true
+    },
+    {
+      "width": 768,
+      "lang": "fr-CA",
+      "noScroll": true,
+      "titleFits": true,
+      "bothTitleLinesShowBesideCard": true,
+      "cardFits": true,
+      "menuButtonReachable": true,
+      "loaderGone": true,
+      "menuFits": true
+    },
+    {
+      "width": 375,
+      "lang": "en-CA",
+      "noScroll": true,
+      "titleFits": true,
+      "bothTitleLinesShowBesideCard": true,
+      "cardFits": true,
+      "menuButtonReachable": true,
+      "loaderGone": true,
+      "menuFits": true
+    },
+    {
+      "width": 375,
+      "lang": "fr-CA",
+      "noScroll": true,
+      "titleFits": true,
+      "bothTitleLinesShowBesideCard": true,
+      "cardFits": true,
+      "menuButtonReachable": true,
+      "loaderGone": true,
+      "menuFits": true
+    }
+  ],
+  "swipeAdvances": true,
+  "reducedMotion": {
+    "loaderSkipped": true,
+    "titleShown": true,
+    "slidesStillWork": true
+  },
+  "consoleErrors": [],
+  "failures": [],
+  "verdict": "ALL CHECKS PASSED"
+}
