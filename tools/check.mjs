@@ -103,6 +103,10 @@ R.stage = await evaluate(`(() => {
     titleFits: t.left >= 0 && t.right <= innerWidth,
     titleWidthShare: +(t.width / innerWidth).toFixed(2),
     slides: qa('.slide').length,
+    photos: qa('.slide img').length,
+    photosLoaded: qa('.slide img').every((i) => i.complete && i.naturalWidth > 400),
+    photosAreLocal: qa('.slide img').every((i) => new URL(i.src).host === location.host),
+    photoCoversCard: (() => { const i = q('.slide.is-active img').getBoundingClientRect(); return Math.abs(i.width - c.width) < 2 && Math.abs(i.height - c.height) < 2; })(),
     slideNames: qa('.slide').map((s) => s.getAttribute('aria-label')),
     cardRevealed: getComputedStyle(q('.card')).clipPath === 'inset(0px)',
     cardCentred: Math.abs(c.left + c.width / 2 - innerWidth / 2) < 2 && Math.abs(c.top + c.height / 2 - innerHeight / 2) < 2,
@@ -286,7 +290,7 @@ const failures = [];
 const expect = (ok, name) => { if (!ok) failures.push(name); };
 expect(R.loader.pctAtStart < 100 && R.loader.pctAtEnd === 100, 'loader counter 0→100');
 expect(R.stage.brand === 'HCDESIGN' && R.stage.docTitle.startsWith('HCDESIGN'), 'brand is HCDESIGN');
-expect(R.stage.titleLines.length === 2 && R.stage.slides === 3 && R.stage.counter === '1 – 3', 'two title lines, three slides, counter');
+expect(R.stage.photos === 3 && R.stage.titleLines.length === 2 && R.stage.slides === 3 && R.stage.counter === '1 – 3', 'two title lines, three slides, counter');
 expect(R.stage.headerItems.langSwitch === 2, 'language switch');
 expect(R.menu.links.join() === 'Home,Projects,About,Contact' && R.menu.currentMarked === '#home' && R.menu.number === '01', 'menu content');
 expect(R.views.projects.items === 6 && R.views.about.items === 4, 'inner view content');

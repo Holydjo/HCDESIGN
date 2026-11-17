@@ -63,7 +63,9 @@
       const p = Math.min(1, (Date.now() - t0) / D), e = 1 - Math.pow(1 - p, 3);
       num.textContent = Math.round(e * 100);
       bar.style.transform = `scaleX(${e})`;
-      if (p === 1) { clearInterval(timer); setTimeout(ready, 300); }
+      // hold at 100% until the first photo is in (or 4 s have passed), so the stage never opens on a blank card
+      const first = document.querySelector('.slide img');
+      if (p === 1 && (!first || first.complete || Date.now() - t0 > 4000)) { clearInterval(timer); setTimeout(ready, 300); }
     }, 30);
   }
 

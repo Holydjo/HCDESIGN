@@ -4,7 +4,7 @@
 
 - **Reference:** <https://lironmoran-interiors.com/> (home page, viewed 16 November 2026)
 - **Remake:** this repository (`index.html`, `styles.css`, `main.js`), branded **HCDESIGN**, set in Canada, in English and French
-- **Checked:** 16 November 2026, in headless Google Chrome via `tools/check.mjs`
+- **Checked:** 17 November 2026, in headless Google Chrome via `tools/check.mjs`
 
 ## Whose criteria these are
 
@@ -24,8 +24,19 @@ page; short stand-in views for projects, about and contact exist so that no
 link is dead.
 
 The remake does **not** copy the reference's name, text, logo, fonts or
-photographs. Copy is original, project names are invented, and the three
-"photos" are flat SVG illustrations.
+photographs. Copy is original and project names are invented. The three slide
+photographs are freely licensed images stored in `images/`, credited below; a
+flat SVG sits behind each one as a placeholder until it loads.
+
+### Photo credits
+
+All three are from Unsplash, under the Unsplash licence, cropped to 900×1230:
+
+| File | Photographer | Source |
+| --- | --- | --- |
+| `images/01-lounge.jpg` | [@jipy32](https://unsplash.com/@jipy32) | <https://unsplash.com/photos/modern-chairs-in-office-workspace-Gdufctyvzjo> |
+| `images/02-corridor.jpg` | [@miabaker](https://unsplash.com/@miabaker) | <https://unsplash.com/photos/office-hallway-with-glass-walls-jjhvyxm34nY> |
+| `images/03-boardroom.jpg` | [@\_\_\_atmos](https://unsplash.com/@___atmos) | <https://unsplash.com/photos/modern-conference-room-with-leather-chairs-and-table-Q31mm9jfUWU> |
 
 ## Results
 
@@ -41,6 +52,7 @@ Every check passed on the final run. Raw output is in `report/result.json`.
 | Portrait image centred on top of the title | Centred portrait card, in front of the title, both title lines visible either side | Pass |
 | "Scroll" label left, "1 – 3" counter right | Same | Pass |
 | Three projects; scrolling swaps image and background colour, and loops | 3 slides, 3 background colours, loops forward and backward | Pass |
+| Interior photographs in the card | 3 photographs, served from this repository, filling the card; loader waits for the first one | Pass |
 | Footer: tagline, "View all projects", year | Same | Pass |
 | Small ring cursor that grows over the image | Follows the pointer, grows with a "View" label over the image | Pass |
 | Single screen, no page scroll | No vertical or sideways scroll at 1280, 768 and 375 px | Pass |
@@ -80,8 +92,9 @@ as more than it is.
 - **Content is placeholder.** Copy, project names, cities and dates are
   invented, and `hello@hcdesign.example` is not a real address. The French was
   written by Claude and has not been reviewed by a native speaker.
-- **Illustrations, not photographs.** The slides are simple SVG drawings.
-  Real project photos need to come from the owner.
+- **Stock photographs, not this studio's work.** The three slide photos are
+  freely licensed stock images of other people's interiors, credited above.
+  They stand in for real project photography, which has to come from the owner.
 - **Inner pages are stand-ins.** Projects, About and Contact are short
   full-screen views inside the same page, not remakes of the reference's
   pages. "Gallery" opens the projects list. There are no project detail pages.
@@ -94,11 +107,13 @@ as more than it is.
   are not included, because HCDESIGN's accounts are not known.
 - **Not compared pixel by pixel.** Checks are structural and behavioural. No
   visual-diff against the reference was run.
-- **Run history.** Three runs were made. The first passed, but its
+- **Run history.** Four runs were made. The first passed, but its
   screenshots showed the title hidden behind the image on phones and the large
   cursor staying on screen when the menu opened; both were fixed and checks
   for them were added. The second run then failed the new title check at
-  768 px; the layout was adjusted and the third run passed everything.
+  768 px; the layout was adjusted and the third run passed everything. The
+  fourth run was after the drawings were replaced with photographs, with three
+  further checks added for them; it passed everything.
 - **Check script is macOS-specific** unless the `CHROME` environment variable
   points at a Chrome binary.
 

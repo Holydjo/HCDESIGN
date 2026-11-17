@@ -3,7 +3,7 @@
     "shownAtStart": true,
     "hasRing": true,
     "hasLine": true,
-    "pctAtStart": 55,
+    "pctAtStart": 58,
     "pctAtEnd": 100,
     "goneAfter": true
   },
@@ -20,6 +20,10 @@
     "titleFits": true,
     "titleWidthShare": 0.65,
     "slides": 3,
+    "photos": 3,
+    "photosLoaded": true,
+    "photosAreLocal": true,
+    "photoCoversCard": true,
     "slideNames": [
       "Atrium Laurier, Montréal",
       "Kiln Studio, Toronto",
